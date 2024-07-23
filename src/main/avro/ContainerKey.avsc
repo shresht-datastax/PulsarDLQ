@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "ContainerKey",
+  "namespace": "com.example.Pulsar_test.model",
+  "doc": "Table 38393236353635392d373833652d346333392d626338382d316162383932613364353731_sortation.container",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    }
+  ]
+}

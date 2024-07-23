@@ -1,0 +1,20 @@
+{
+  "type": "record",
+  "name": "ContainerParentKey",
+  "namespace": "com.example.Pulsar_test.model",
+  "doc": "Table 63353437396533612d396630362d346635352d626235312d303766386633616630633037_sortation.child_to_parent_container_association",
+  "fields": [
+    {
+      "name": "child_container_id",
+      "type": "string"
+    },
+    {
+      "name": "node_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

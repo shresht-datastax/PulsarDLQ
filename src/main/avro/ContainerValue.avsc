@@ -1,0 +1,151 @@
+{
+  "type": "record",
+  "name": "ContainerValue",
+  "namespace": "com.example.Pulsar_test.model",
+  "doc": "Table 38393236353635392d373833652d346333392d626338382d316162383932613364353731_sortation.container",
+  "fields": [
+    {
+      "name": "auxiliary_data",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "AuxiliaryData",
+          "doc": "CQL UDT type",
+          "fields": [
+            {
+              "name": "account_number",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "origin_facility_code",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "destination_facility_code",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "reference1",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "reference2",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "reference3",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "created_at",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "nodes",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": [
+            "null",
+            "string"
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "service_code",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "container_type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "carrier_tracking_number",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "airterra_tracking_number",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "active_node_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "container_barcode",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "shipper_parcel_number",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

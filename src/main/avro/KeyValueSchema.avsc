@@ -1,0 +1,231 @@
+{
+  "type" : "record",
+  "name" : "KeyValueRecord",
+  "fields" : [ {
+    "name" : "key",
+    "type" : {
+      "type" : "record",
+      "name" : "ContainerPlanKey",
+      "namespace" : "com.example.Pulsar_test.model",
+      "doc" : "Table 63353437396533612d396630362d346635352d626235312d303766386633616630633037_sortation.container_plan",
+      "fields" : [ {
+        "name" : "container_id",
+        "type" : "string"
+      }, {
+        "name" : "node_id",
+        "type" : [ "null", "string" ],
+        "default" : null
+      } ]
+    }
+  }, {
+    "name" : "value",
+    "type" : {
+      "type" : "record",
+      "name" : "ContainerPlanValue",
+      "namespace" : "com.example.Pulsar_test.model",
+      "doc" : "Table 63353437396533612d396630362d346635352d626235312d303766386633616630633037_sortation.container_plan",
+      "fields" : [ {
+        "name" : "planned_stage_area_ids",
+        "type" : [ "null", {
+          "type" : "array",
+          "items" : [ "null", "string" ]
+        } ],
+        "default" : null
+      }, {
+        "name" : "sort_group_id",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "processing_date",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "physical_status",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "last_scanned_stage_area_id",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "planned_stage_areas",
+        "type" : [ "null", {
+          "type" : "array",
+          "items" : [ "null", {
+            "type" : "record",
+            "name" : "Area",
+            "doc" : "CQL type 38393236353635392d373833652d346333392d626338382d316162383932613364353731_sortation.area",
+            "fields" : [ {
+              "name" : "id",
+              "type" : [ "null", "string" ],
+              "default" : null
+            }, {
+              "name" : "name",
+              "type" : [ "null", "string" ],
+              "default" : null
+            }, {
+              "name" : "barcode",
+              "type" : [ "null", "string" ],
+              "default" : null
+            }, {
+              "name" : "type",
+              "type" : [ "null", "string" ],
+              "default" : null
+            } ]
+          } ]
+        } ],
+        "default" : null
+      }, {
+        "name" : "planned_sort_area_ids",
+        "type" : [ "null", {
+          "type" : "array",
+          "items" : [ "null", "string" ]
+        } ],
+        "default" : null
+      }, {
+        "name" : "last_scanned_receive_area_id",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "airterra_tracking_number",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "execution_status",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "planned_receive_area_ids",
+        "type" : [ "null", {
+          "type" : "array",
+          "items" : [ "null", "string" ]
+        } ],
+        "default" : null
+      }, {
+        "name" : "container_barcode",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "last_updated_at",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "auxiliary_data",
+        "type" : [ "null", {
+          "type" : "record",
+          "name" : "CdcAuxiliaryData",
+          "doc" : "CQL UDT type",
+          "fields" : [ {
+            "name" : "account_number",
+            "type" : [ "null", "string" ],
+            "default" : null
+          }, {
+            "name" : "origin_facility_code",
+            "type" : [ "null", "string" ],
+            "default" : null
+          }, {
+            "name" : "destination_facility_code",
+            "type" : [ "null", "string" ],
+            "default" : null
+          } ]
+        } ],
+        "default" : null
+      }, {
+        "name" : "created_at",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "status",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "planned_receive_areas",
+        "type" : [ "null", {
+          "type" : "array",
+          "items" : [ "null", "Area" ]
+        } ],
+        "default" : null
+      }, {
+        "name" : "container_type",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "parent_container_id",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "last_scanned_sort_area_id",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "planned_sort_areas",
+        "type" : [ "null", {
+          "type" : "array",
+          "items" : [ "null", "Area" ]
+        } ],
+        "default" : null
+      }, {
+        "name" : "is_container_empty",
+        "type" : [ "null", "boolean" ],
+        "default" : null
+      }, {
+        "name" : "container_closed_timestamp",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "container_loaded_timestamp",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "container_staged_timestamp",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "container_departed_timestamp",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "container_destroyed_timestamp",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "parcel_received_timestamp",
+        "type" : [ "null", "long" ],
+        "default" : null
+      }, {
+        "name" : "children_metadata",
+        "type" : [ "null", {
+          "type" : "record",
+          "name" : "CdcChildrenMetadata",
+          "doc" : "CQL UDT type",
+          "fields" : [ {
+            "name" : "service_information",
+            "type" : [ "null", {
+              "type" : "array",
+              "items" : [ "null", {
+                "type" : "record",
+                "name" : "CdcServiceInformation",
+                "doc" : "CQL UDT type",
+                "fields" : [ {
+                  "name" : "service_level",
+                  "type" : [ "null", "string" ],
+                  "default" : null
+                }, {
+                  "name" : "parcel_count",
+                  "type" : [ "null", "int" ],
+                  "default" : null
+                } ]
+              } ]
+            } ],
+            "default" : null
+          } ]
+        } ],
+        "default" : null
+      }, {
+        "name" : "container_cpt",
+        "type" : [ "null", "long" ],
+        "default" : null
+      } ]
+    }
+  } ]
+}

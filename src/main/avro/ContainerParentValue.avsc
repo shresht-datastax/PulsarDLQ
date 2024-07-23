@@ -1,0 +1,32 @@
+{
+  "type": "record",
+  "name": "ContainerParentValue",
+  "namespace": "com.example.Pulsar_test.model",
+  "doc": "Table 63353437396533612d396630362d346635352d626235312d303766386633616630633037_sortation.child_to_parent_container_association",
+  "fields": [
+    {
+      "name": "parent_container_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "active",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "created_at",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    }
+  ]
+}

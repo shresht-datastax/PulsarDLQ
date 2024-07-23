@@ -1,0 +1,28 @@
+{
+  "type": "record",
+  "name": "ContainerBarcodeKey",
+  "namespace": "com.example.Pulsar_test.model",
+  "doc": "Table 63353437396533612d396630362d346635352d626235312d303766386633616630633037_sortation.container_barcode_to_id_v2",
+  "fields": [
+    {
+      "name": "container_barcode",
+      "type": "string"
+    },
+    {
+      "name": "node_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}
